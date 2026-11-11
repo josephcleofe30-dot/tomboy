@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Desk - Inventory</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="sidebar">
+
+            <div class="logo">
+                <span class="logo-icon">♿</span>
+                <span>Shop</span>
+            </div>
+
+            <ul class="nav-menu">
+                <li>
+                    <span class="nav-icon">🏚</span>
+                    <span>Dashboard</span>
+                </li>
+
+                <li class="active">
+                    <span class="nav-icon">📦</span>
+                    <span>Inventory</span>
+                </li>
+
+                <li>
+                    <span class="nav-icon">🛒</span>
+                    <span>Orders</span>
+                </li>
+
+                <li>
+                    <span class="nav-icon">📊</span>
+                    <span>Reports</span>
+                </li>
+
+                <li>
+                    <span class="nav-icon">🎡</span>
+                    <span>Settings</span>
+                </li>
+            </ul>
+
+        </div>
+
+        <main class="main-content">
+
+            <div class="taas">
+                <div>
+                    <h1>Inventory</h1>
+                    <p>Manage products and current stock.</p>
+                </div>
+
+                <button class="button"> + Add Product</button>
+            </div>
+            <section class="summary">
+
+                <div class="summary-card products">
+                    <div class="card-icon">📦</div>
+                    <div class="card-info">
+                        <p>Total Products</p>
+                        <h2>124</h2>
+                    </div>
+                </div>
+
+                <div class="summary-card low-stock">
+                    <div class="card-icon">⚠</div>
+                    <div class="card-info">
+                        <p>Low Stock</p>
+                        <h2>08</h2>
+                    </div>
+                </div>
+
+                <div class="summary-card stock-value">
+                    <div class="card-icon">⬜</div>
+                    <div class="card-info">
+                        <p>Stock Value</p>
+                        <h2>₱24,680</h2>
+                    </div>
+                </div>
+
+            </section>
+            <section class="controls">
+
+                <input type="text" class="search-box">
+
+                <select class="category-select">
+                    <option>All Categories</option>
+                    <option>Drinks</option>
+                    <option>Dairy</option>
+                    <option>Bakery</option>
+                    <option>Grocery</option>
+                    <option>Canned Goods</option>
+                </select>
+
+            </section>
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>SKU</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th class="center">Stock</th>
+                            <th class="center">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img class="product-image" src="JDVP Goal/Assets/Product/cola-drink.png"
+                                        alt="Cola Drink">
+                                    Cola Drink
+                                </div>
+                            </td>
+                            <td>DR-001</td>
+                            <td>Drinks</td>
+                            <td>₱25</td>
+                            <td class="center">18</td>
+                            <td class="center">
+                                <span class="status in-stock">In Stock</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img class="product-image" src="JDVP Goal/Assets/Product/fresh-milk.png">
+                                    Fresh Milk
+                                </div>
+                            </td>
+                            <td>DA-014</td>
+                            <td>Dairy</td>
+                            <td>₱42</td>
+                            <td class="center">5</td>
+                            <td class="center">
+                                <span class="status low">Low Stock</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img class="product-image" src="JDVP Goal/Assets/Product/loaf-bread.png"
+                                        alt="Loaf Bread">
+                                    Loaf Bread
+                                </div>
+                            </td>
+                            <td>BK-006</td>
+                            <td>Bakery</td>
+                            <td>₱55</td>
+                            <td class="center">12</td>
+                            <td class="center">
+                                <span class="status in-stock">In Stock</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img class="product-image" src="JDVP Goal/Assets/Product/instant-noodles.png"
+                                        alt="Instant Noodles">
+                                    Instant Noodles
+                                </div>
+                            </td>
+                            <td>GR-022</td>
+                            <td>Grocery</td>
+                            <td>₱15</td>
+                            <td class="center">3</td>
+                            <td class="center">
+                                <span class="status low">Low Stock</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img class="product-image" src="JDVP Goal/Assets/Product/brown-eggs.png"
+                                        alt="Brown Eggs">
+                                    Brown Eggs
+                                </div>
+                            </td>
+                            <td>DA-009</td>
+                            <td>Dairy</td>
+                            <td>₱95</td>
+                            <td class="center">24</td>
+                            <td class="center">
+                                <span class="status in-stock">In Stock</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="product-info">
+                                    <img class="product-image" src="JDVP Goal/Assets/Product/sardines.png"
+                                        alt="Sardines">
+                                    Sardines
+                                </div>
+                            </td>
+                            <td>CN-018</td>
+                            <td>Canned Goods</td>
+                            <td>₱28</td>
+                            <td class="center">7</td>
+                            <td class="center">
+                                <span class="status in-stock">In Stock</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
